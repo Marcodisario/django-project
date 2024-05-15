@@ -1,0 +1,9 @@
+{% if questions %}
+<ol>    
+    {% for question in questions %}
+    <li>{{ question.question_text }}</li>
+    {% endfor %}
+</ol>
+{% else %}
+    <p>No hay perguntas</p>
+{% endif %}
